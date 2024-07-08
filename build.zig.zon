@@ -1,0 +1,20 @@
+.{
+    .name = "zig_structures",
+    .version = "0.0.0-alpha.0",
+
+    .minimum_zig_version = "0.13.0",
+
+    .dependencies = .{
+        .meta_match = .{
+            .url = "https://github.com/tomBoddaert/meta_match/archive/037ca63e90a744ab1fdefcf1aee10f8935b80f02.tar.gz",
+            .hash = "122068f9e4e63f1b79eb0ba99d3f9931a1f005471a67d6d752992af0d8c0487db9ac",
+        },
+        // .meta_match = .{ .path = "../meta_match" },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
