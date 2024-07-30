@@ -53,8 +53,8 @@ pub fn Deinit(comptime T: type) type {
             },
         };
 
-        /// The MetaMatch expression used to determine 'has_deinit'.
-        pub const MetaMatch = TypeMatch{
+        // The MetaMatch expression used to determine 'has_deinit'.
+        const MetaMatch = TypeMatch{
             .container = &ContainerMatch{
                 // It must be a container with a 'deinit' function matching 'DeinitMatch' above
                 .decls = &.{DeclarationMatch{
